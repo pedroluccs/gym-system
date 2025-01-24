@@ -1,10 +1,11 @@
 import "@/styles/globals.css";
 import { Box, Button, LeftBox, LoginInput, RightBox } from "./style";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import Image from "next/image";
 import Link from "next/link";
-
+import AOS from "aos";
+import "aos/dist/aos.css"; 
 
 
 const LoginBox = () => {
@@ -13,9 +14,16 @@ const [senha, setSenha] = useState("");
 const [erro, setErro] = useState("");
 const router = useRouter();
 
+useEffect(() => {
+    AOS.init({
+      duration: 1000,  
+      easing: "ease-in-out",  
+      once: true, 
+    });
+}, []);
+
 
 const handleLogin = () => {
-    // Buscar o usuário administrador no localStorage
     const usuarioAdmin = JSON.parse(localStorage.getItem("usuarioAdmin") || "null");
 
     if (!usuarioAdmin) {
@@ -32,7 +40,7 @@ const handleLogin = () => {
     }
 };
     return (
-        <Box>
+        <Box data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
         <Link href="/">
         <Image
         src="/icon/arrow.png"      
