@@ -78,12 +78,10 @@ return (
         <h2>Dashboard de Clientes</h2>
         </header>
         <Graphic>
-          {/* Clientes Ativos */}
             <Status>
             <h3>Clientes Ativos</h3>
             <p>{clientesAtivos} Clientes ativos</p>
             </Status>
-          {/* Gráfico de Pizza - Planos */}
             <div style={{ flex: 1 }}>
             <h3>Planos</h3>
             <ResponsiveContainer width="100%" height={300}>
@@ -105,7 +103,6 @@ return (
             </PieChart>
             </ResponsiveContainer>
             </div>
-          {/* Gráfico de Barras - Faixas Etárias */}
             <div style={{ flex: 1 }}>
             <h3>Faixa Etária</h3>
             <ResponsiveContainer width="100%" height={300}>

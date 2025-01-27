@@ -1,5 +1,7 @@
+import Image from "next/image";
 import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
+
 
 type Aluno = {
     id: string;
@@ -108,7 +110,7 @@ export default function Perfil() {
         <p>
         Foto:{" "}
         {aluno.foto ? (
-            <img src={aluno.foto} alt={aluno.nome} width="100" />
+            <Image src={aluno.foto} alt={aluno.nome} width="100" />
         ) : (
             "Sem foto cadastrada"
         )}
