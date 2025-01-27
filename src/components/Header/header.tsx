@@ -1,4 +1,3 @@
-import "@/styles/globals.css";
 import { HomeBar, HoverLink, Nav } from "./style"
 
 
