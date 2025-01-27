@@ -15,9 +15,9 @@ const App = ({ Component, pageProps }: AppProps) => {
       localStorage.setItem("usuarioAdmin", JSON.stringify(usuarioAdmin));
     };
 
-    // Chama a função apenas uma vez
+
     salvarAdministrador();
-  }, []); // O array vazio [] garante que a função execute apenas uma vez
+  }, []); 
 
   return <Component {...pageProps} />;
 };
