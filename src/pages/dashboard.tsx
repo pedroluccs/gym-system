@@ -1,5 +1,9 @@
 import { useEffect } from "react";
 import { useRouter } from "next/router";
+import DashboardSidebar from "@/components/Sidebar/sidebar";
+import PageBox from "@/components/DashMainScreen/PageBox";
+
+
 
 export default function Dashboard() {
   const router = useRouter();
@@ -15,9 +19,9 @@ export default function Dashboard() {
   }, [router]);
 
   return (
-    <div style={{ padding: "20px" }}>
-      <h1>Bem-vindo, Administrador!</h1>
-      <p>Aqui está o painel de controle do sistema.</p>
-    </div>
+    <>
+    <DashboardSidebar />
+    <PageBox/>
+    </>
   );
 }

@@ -64,7 +64,7 @@ const handleLogin = () => {
             placeholder="Senha"
             />
         <Button onClick={handleLogin}>Entrar</Button>
-        {erro && <p style={{ color: "red" }}>{erro}</p>}
+        {erro && <p style={{ color: "red", margin: "45px 70px" }}>{erro}</p>}
             </LeftBox>
             <RightBox />
         </Box>

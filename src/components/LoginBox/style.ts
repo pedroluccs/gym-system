@@ -13,7 +13,7 @@ background-color:#333;
 
 img {
 position: relative;
-bottom: 250px;
+top: 20px;
 left: 20px;
 }
 `
@@ -25,7 +25,7 @@ align-items: flex-start;
 
 h1 {
 font-size: 32px;
-margin-bottom: 80px;
+margin: 80px;
 margin-left: 48px;
 
 }
