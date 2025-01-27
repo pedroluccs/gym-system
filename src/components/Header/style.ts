@@ -9,6 +9,7 @@ font-size: 20px;
 width: 95%;
 margin: 5vh;
 position: absolute;
+font-family: Roboto, sans-serif;
 `
 
 export const Nav = styled.nav`

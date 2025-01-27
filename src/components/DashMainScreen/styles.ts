@@ -6,6 +6,7 @@ text-align: center;
 align-items: center;
 display: flex;
 overflow: hidden;
+font-family: Roboto, sans-serif;
 `
 
 export const AnalyticsBox = styled.div`
@@ -18,7 +19,7 @@ background: #151a2d;
 display: block;
 
 h2 {
-padding: 10px;
+padding: 10px 50px;
 background:#151a4d;
 text-align: left;
 }

@@ -1,4 +1,3 @@
-import "@/styles/globals.css";
 import { Box, Button, LeftBox, LoginInput, RightBox } from "./style";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
@@ -16,9 +15,9 @@ const router = useRouter();
 
 useEffect(() => {
     AOS.init({
-      duration: 1000,  
-      easing: "ease-in-out",  
-      once: true, 
+    duration: 1000,  
+    easing: "ease-in-out",  
+    once: true, 
     });
 }, []);
 

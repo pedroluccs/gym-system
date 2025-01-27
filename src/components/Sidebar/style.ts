@@ -7,6 +7,7 @@ position: fixed;
 margin: 16px;
 border-radius: 16px;
 height: calc(100vh - 32px);
+font-family: Roboto, sans-serif;
 `
 
 export const SidebarHeader = styled.header`

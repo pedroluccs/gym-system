@@ -9,6 +9,7 @@ margin-top: 100px;
 display: flex;
 overflow: hidden;
 background-color:#333;
+font-family: Roboto, sans-serif;
 
 
 img {
