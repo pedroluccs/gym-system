@@ -3,18 +3,16 @@ import styled from "styled-components";
 export const MainBox = styled.div`
 margin: 0;
 text-align: center;
-align-items: center;
 display: flex;
-overflow: hidden;
 font-family: Roboto, sans-serif;
 `
 
 export const AnalyticsBox = styled.div`
 width: 1200px;
-height: 500px;
+height: 600px;
 margin: 0 auto;
 border-radius: 8px;
-margin-top: 100px;
+margin-top: 16px;
 background: #151a2d;
 display: block;
 

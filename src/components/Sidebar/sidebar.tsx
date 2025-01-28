@@ -37,7 +37,7 @@ const DashboardSidebar = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link href="#" className="nav-link">
+                        <Link href="/financeiro" className="nav-link">
                         <span className="nav-icon material-symbols-outlined">analytics</span>
                         <span className="nav-label">Financeiro</span>
                         </Link>
