@@ -2,7 +2,7 @@ import DashboardSidebar from "@/components/Sidebar/sidebar";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
-import { ProfileBox, ProfilePage, InputGrid, ActionButton } from "./styles";
+import { ProfileBox, ProfilePage, InputGrid, ActionButton } from "../../styles/styles";
 
 type Aluno = {
 id: string;
