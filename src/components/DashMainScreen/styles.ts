@@ -9,7 +9,7 @@ font-family: Roboto, sans-serif;
 
 export const AnalyticsBox = styled.div`
 width: 1200px;
-height: 600px;
+height: 500px;
 margin: 0 auto;
 border-radius: 8px;
 margin-top: 16px;

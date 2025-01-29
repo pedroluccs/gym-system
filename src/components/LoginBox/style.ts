@@ -30,8 +30,6 @@ margin: 80px;
 margin-left: 48px;
 
 }
-
-
 `
 export const RightBox = styled.div`
 flex: 2;

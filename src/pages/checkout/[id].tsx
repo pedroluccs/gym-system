@@ -20,26 +20,23 @@ if (!aluno || aluno.id !== id) {
 }
 
 const handlePagamento = () => {
-
     if (!aluno.cartao || !aluno.validade || !aluno.cvv) {
-    alert("Preencha todos os dados de pagamento!");
-    return;
+      alert("Preencha todos os dados de pagamento!");
+      return;
     }
-
-    // Recupera todos os alunos salvos no localStorage
+  
+    // Adiciona a data atual ao registro do aluno
+    aluno.dataPagamento = new Date().toISOString();
+  
     const alunos = JSON.parse(localStorage.getItem("alunos") || "[]");
-
-    // Registra o aluno permanentemente
     alunos.push(aluno);
-
-    // Salva no localStorage permanentemente
+  
     localStorage.setItem("alunos", JSON.stringify(alunos));
-
     localStorage.removeItem("alunoTemp");
-
+  
     alert("Pagamento efetuado com sucesso e aluno registrado!");
     router.push("/dashboard");
-};
+  };
 
 return (
     <>
