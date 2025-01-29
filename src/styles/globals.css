@@ -6,10 +6,6 @@
   text-decoration: none;
   font-family: Roboto, sans-serif;
 }
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
 
 html,
 body {
