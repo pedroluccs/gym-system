@@ -82,7 +82,7 @@ const Financeiro = () => {
     });
 
     custosSalvos.forEach((custo: CustoVariavel) => {
-      const mesAtual = new Date().getMonth(); // Simulando que o custo é do mês atual
+      const mesAtual = new Date().getMonth();
       custosMensais[mesAtual] += custo.valor;
     });
 

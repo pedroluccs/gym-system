@@ -6,20 +6,18 @@ margin: 0;
 display: flex;
 flex-direction: column;
 font-family: Roboto, sans-serif;
-max-height: calc(100vh - 60px);
-  overflow-y: auto;
-  padding-bottom: 20px;
+max-height: 100vh;
+overflow-y: auto;
+padding-bottom: 20px;
 `;
 
 export const ChartContainer = styled.div`
 width: 1100px;
-height: 500px;
+height: 525px;
 margin: 0 auto;
 padding: 20px;
-border-radius: 8px;
 margin-top: 16px;
 background-color: white;
-padding: 10px;
 color: #151a2d;
 background-color: #eee;
 border-radius: 8px;
