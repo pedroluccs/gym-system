@@ -50,15 +50,14 @@ margin-top: 20px;
 
 button {
 padding: 10px 16px;
-background: #151a5d;
-color: white;
+background-color: #82ca9d;
+color: #000;
 border: none;
 border-radius: 4px;
 cursor: pointer;
 
 &:hover {
-background: #fff;
-color: #151a2d;
+background-color: #6dbd81;
 }
 }
 `;
