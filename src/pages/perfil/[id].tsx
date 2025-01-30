@@ -67,8 +67,8 @@ if (!aluno) return <p>Carregando...</p>;
 
 return (
     <>
-        <DashboardSidebar />
         <ProfilePage>
+        <DashboardSidebar />
         <ProfileBox>
         <h1>Perfil de {aluno.nome}</h1>
         <InputGrid>

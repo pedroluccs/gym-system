@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import { v4 as uuidv4 } from "uuid";
 import { MainBox } from "../DashMainScreen/styles"; 
 import { RegisterBox, RegisterButton, RegisterGrid, RegisterPage } from "./styles";
+import DashboardSidebar from "../Sidebar/sidebar";
 
 const RegistroPage = () => {
 const [nome, setNome] = useState("");
@@ -46,7 +47,8 @@ const handleRegistro = () => {
 
 return (
     <RegisterPage>
-    <RegisterBox>
+    <DashboardSidebar />
+    <RegisterBox >
         <h1>Registro de Alunos</h1>
         <RegisterGrid>
         <form

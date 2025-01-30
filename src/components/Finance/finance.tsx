@@ -16,6 +16,7 @@ import {
   CostsTable,
   FormContainer,
 } from "./styles";
+import DashboardSidebar from "../Sidebar/sidebar";
 
 type Aluno = {
   id: string;
@@ -125,6 +126,8 @@ const Financeiro = () => {
 
   return (
     <FinanceContainer>
+      <DashboardSidebar/>
+      <div>
       <ChartContainer>
         <h2>Fluxo de Caixa (Valores por Mês)</h2>
         <ResponsiveContainer width="100%" height={400}>
@@ -135,11 +138,10 @@ const Financeiro = () => {
             <Tooltip />
             <Legend />
             <Bar dataKey="receita" fill="#82ca9d" name="Receita" />
-            <Bar dataKey="custos" fill="#ff726f" name="Custos Variáveis" />
+            <Bar dataKey="custos" fill="#ff726f" name="Custos" />
           </BarChart>
         </ResponsiveContainer>
       </ChartContainer>
-
       <CostsContainer>
         <h3>Adicionar Custos</h3>
         <FormContainer>
@@ -149,7 +151,7 @@ const Financeiro = () => {
               type="text"
               value={nomeCusto}
               onChange={(e) => setNomeCusto(e.target.value)}
-            />
+              />
           </div>
           <div>
             <label>Valor:</label>
@@ -157,11 +159,10 @@ const Financeiro = () => {
               type="number"
               value={valorCusto}
               onChange={(e) => setValorCusto(e.target.value)}
-            />
+              />
           </div>
           <button onClick={handleAdicionarCusto}>Adicionar Custo</button>
         </FormContainer>
-
         <CostsTable>
           <thead>
             <tr>
@@ -183,6 +184,7 @@ const Financeiro = () => {
           </tbody>
         </CostsTable>
       </CostsContainer>
+            </div>
     </FinanceContainer>
   );
 };

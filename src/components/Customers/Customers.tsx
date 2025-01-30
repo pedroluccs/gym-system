@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { AnalyticsBox, MainBox } from "../DashMainScreen/styles";
+import DashboardSidebar from "../Sidebar/sidebar";
 
 
 type Aluno = {
@@ -47,6 +48,7 @@ const removerAluno = (id: string) => {
 
 return (
     <MainBox>
+        <DashboardSidebar/>
         <AnalyticsBox>
         <header style={{ marginTop: "16px"}}>
     <h1>Lista de Alunos</h1>

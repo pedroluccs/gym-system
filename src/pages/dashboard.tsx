@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import { useRouter } from "next/router";
-import DashboardSidebar from "@/components/Sidebar/sidebar";
 import PageBox from "@/components/DashMainScreen/PageBox";
 
 
@@ -20,7 +19,6 @@ export default function Dashboard() {
 
   return (
     <>
-    <DashboardSidebar />
     <PageBox/>
     </>
   );

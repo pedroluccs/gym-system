@@ -8,7 +8,8 @@ font-family: Roboto, sans-serif;
 
 export const ProfileBox = styled.div`
 width: 1000px;
-height: auto;
+max-height: 100vh;
+height: 50%;
 margin: 0 auto;
 padding: 20px;
 border-radius: 8px;

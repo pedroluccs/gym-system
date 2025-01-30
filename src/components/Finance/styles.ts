@@ -2,43 +2,49 @@ import styled from "styled-components";
 
 
 export const FinanceContainer = styled.div`
-margin: 0;
+margin: 0 auto;
 display: flex;
-flex-direction: column;
 font-family: Roboto, sans-serif;
+max-width: 100%;
 max-height: 100vh;
-overflow-y: auto;
-padding-bottom: 20px;
 `;
 
 export const ChartContainer = styled.div`
-width: 1100px;
-height: 525px;
-margin: 0 auto;
-padding: 20px;
-margin-top: 16px;
-background-color: white;
-color: #151a2d;
-background-color: #eee;
-border-radius: 8px;
-
-h2 {
-margin: 32px;
-text-align: center;
-}
-`;
-
-export const CostsContainer = styled.div`
-margin: 0 auto;
-margin-top: 100px;
-background-color: #151a2d;
+margin-top: 20px;
+background-color: #fff;
 color: #fff;
 border-radius: 8px;
-width: 1100px;
+max-width: 100%;
+width: 120vh;
+margin-left: 200px;
 display: flex;
 flex-direction: column;
 text-align: left;
 align-items: center;
+
+
+h2 {
+padding: 10px;
+width: 100%;
+background:#151a4d;
+text-align: center;
+}
+
+`;
+
+export const CostsContainer = styled.div`
+margin-top: 20px;
+background-color: #151a2d;
+color: #fff;
+border-radius: 8px;
+width: 120vh;
+margin-left: 200px;
+display: flex;
+flex-direction: column;
+text-align: left;
+align-items: center;
+padding: 20px;
+
 
 h3 {
 margin-top: 16px;

@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { AnalyticsBox, MainBox, Graphic, Status } from "./styles";
 import { PieChart, Pie, Cell, BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer } from "recharts";
+import DashboardSidebar from "../Sidebar/sidebar";
 
 type Aluno = {
 id: string;
@@ -73,6 +74,7 @@ useEffect(() => {
 
 return (
     <MainBox>
+        <DashboardSidebar/>
         <AnalyticsBox>
         <header>
         <h2>Dashboard de Clientes</h2>

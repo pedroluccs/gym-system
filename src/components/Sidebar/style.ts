@@ -1,9 +1,13 @@
 import styled from "styled-components";
 
 export const Sidebar = styled.aside`
-background: #151a2d;
+position: sticky;
+top: 0;
 width: 270px;
-position: fixed;
+display: flex;
+flex-direction: column;
+z-index: 1000;
+background: #151a2d;
 margin: 16px;
 border-radius: 16px;
 height: calc(100vh - 32px);
@@ -11,7 +15,6 @@ font-family: Roboto, sans-serif;
 `
 
 export const SidebarHeader = styled.header`
-display: block;
 padding: 25px 20px;
 align-items: center;
 text-align: center;
