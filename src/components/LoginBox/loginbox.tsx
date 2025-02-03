@@ -27,17 +27,17 @@ useEffect(() => {
     });
 }, []);
 
-    const handleLogin = () => {
-    const usuarioAdmin: Usuario | null = JSON.parse(localStorage.getItem("usuarioAdmin") || "null");
-    const colaboradores: Usuario[] = JSON.parse(localStorage.getItem("colaboradores") || "[]");
+const handleLogin = () => {
+const usuarioAdmin: Usuario | null = JSON.parse(localStorage.getItem("usuarioAdmin") || "null");
+const colaboradores: Usuario[] = JSON.parse(localStorage.getItem("colaboradores") || "[]");
 
-    let usuarioLogado: Usuario | null = null;
+let usuarioLogado: Usuario | null = null;
 
     if (usuarioAdmin && email === usuarioAdmin.email && senha === usuarioAdmin.senha) {
     usuarioLogado = usuarioAdmin;
-    } else {
+} else {
     usuarioLogado = colaboradores.find(
-        (colaborador) => colaborador.email === email && colaborador.senha === senha
+    (colaborador) => colaborador.email === email && colaborador.senha === senha
     ) || null;
     }
 
@@ -51,10 +51,10 @@ useEffect(() => {
 
 return (
     <Box data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
-    <Link href="/">
+        <Link href="/">
         <Image src="/icon/arrow.png" alt="back" width={24} height={24} />
-    </Link>
-    <LeftBox>
+        </Link>
+        <LeftBox>
         <h1>Login to dashboard</h1>
         <LoginInput
         type="email"

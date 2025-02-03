@@ -33,7 +33,7 @@ margin-left: 48px;
 `
 export const RightBox = styled.div`
 flex: 2;
-background-image: url("/images/login.jpg");
+background-image: url("/images/gym.jpeg");
 background-size: cover;
 background-position: center;
 height: 100%;
@@ -71,7 +71,7 @@ border: none;
 border-radius: 24px;
 color: #ccc;
 cursor: pointer;
-background: linear-gradient(to right, #cc0033, #666);
+background: linear-gradient(to right, #151a2d, #666);
 background-size: 150%; 
 background-position: left;
 transition: background-position 0.8s ease; 

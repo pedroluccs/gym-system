@@ -53,12 +53,14 @@ return (
             </li>
             </>
         )}
+        {/*
         <li>
-            <Link href="#" className="nav-link">
-            <span className="nav-icon material-symbols-outlined">analytics</span>
-            <span className="nav-label">Estoque</span>
-            </Link>
-        </li>
+        <Link href="/estoque" className="nav-link">
+        <span className="nav-icon material-symbols-outlined">analytics</span>
+        <span className="nav-label">Estoque</span>
+        </Link>
+        </li> 
+        */}
         <li>
             <Link href="/registro" className="nav-link">
             <span className="nav-icon material-symbols-outlined">settings</span>
@@ -68,7 +70,7 @@ return (
         </SideBarNav>
         <SideBarNav style={{ position: "absolute", bottom: "30px", width: "100%" }}>
         <li>
-            <Link href="#" className="nav-link">
+            <Link href="/perfil" className="nav-link">
             <span className="nav-icon material-symbols-outlined">account_circle</span>
             <span className="nav-label">Perfil</span>
             </Link>
