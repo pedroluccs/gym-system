@@ -82,7 +82,7 @@ const ColaboradoresPage = () => {
         <DashboardSidebar />
       <Content>
         <h2>Gestão de Colaboradores</h2>
-        <div style={{ width: "60%"}}>
+        <div style={{ width: "65%"}}>
         <SearchBar
           type="text"
           placeholder="Pesquisar colaborador pelo nome..."

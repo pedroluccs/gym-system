@@ -32,7 +32,7 @@ margin: 10px 0;
 height: 100%;
 
 h2 {
-text-align: right;
+text-align: center;
 }
 }
 `
@@ -69,7 +69,7 @@ margin: 5px;
 }
 
 @media (max-width: 769px) {
-margin-left: 54px;
+margin-left: 80px;
 `
 
 export const ButtonContainer = styled.div`

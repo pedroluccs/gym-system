@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const Box = styled.div`
 width: 1200px;
 height: 600px;
-margin: 0 auto;
 border-radius: 8px;
 margin-top: 100px;
 display: flex;
@@ -49,6 +48,10 @@ margin-left: 48px;
 @media (max-width: 769px) {
 align-items: center;
 margin: 0;
+
+h1 {
+margin-bottom: 0 auto;
+}
 `
 export const RightBox = styled.div`
 flex: 2;
@@ -89,6 +92,8 @@ opacity: 0;
 @media (max-width: 769px) {
 text-align: center;
 margin: 10px 0;
+
+
 `
 export const Button = styled.button`
 padding: 12px 80px;
@@ -109,7 +114,7 @@ background-position: right;
 
 @media (max-width: 769px) {
 margin-left: 0;
-margin-bottom: 16px;
+margin-bottom: 180px;
 margin-top: 16px;
 
 `

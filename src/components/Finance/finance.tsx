@@ -41,18 +41,18 @@ const planoValores: Record<string, number> = {
 };
 
 const meses = [
-  "Janeiro",
-  "Fevereiro",
-  "Março",
-  "Abril",
+  "Jan",
+  "Fev",
+  "Mar",
+  "Abr",
   "Maio",
-  "Junho",
-  "Julho",
-  "Agosto",
-  "Setembro",
-  "Outubro",
-  "Novembro",
-  "Dezembro",
+  "Jun",
+  "Jul",
+  "Ago",
+  "Set",
+  "Out",
+  "Nov",
+  "Dez",
 ];
 
 const Financeiro = () => {

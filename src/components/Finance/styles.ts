@@ -33,6 +33,9 @@ text-align: center;
 @media (max-width: 769px) {
 margin: 10px 0;
 width: 100%;
+
+
+}
 `;
 
 export const CostsContainer = styled.div`
@@ -56,7 +59,7 @@ margin-top: 16px;
 @media (max-width: 769px) {
 display: block;
 margin: 24px 0;
-height: 70vh;
+height: 100%;
 width: 100%;
 `;
 
@@ -81,6 +84,8 @@ background-color: #f4f4f4;
 @media (max-width: 769px) {
 display: block;
 text-align: center;
+height: 100%;
+
 `
 
 export const FormContainer = styled.div`

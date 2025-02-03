@@ -38,6 +38,13 @@ margin-left: 10px;
 background: none;
 }
 }
+
+@media (max-width: 769px) {
+p {
+margin-bottom: 12px;
+}
+
+}
 `
 export const Graphic = styled.div`
 display: flex;
