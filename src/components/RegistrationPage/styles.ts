@@ -4,6 +4,9 @@ export const RegisterPage = styled.div`
 margin: 0;
 display: flex;
 font-family: Roboto, sans-serif;
+
+@media (max-width: 769px) {
+height: 100%;
 `;
 
 export const RegisterBox = styled.div`
@@ -17,6 +20,12 @@ border-radius: 8px;
 margin-top: 16px;
 background: #151a2d;
 color: white;
+
+@media (max-width: 769px) {
+h1 {
+margin-left: 24px;
+margin-top: -12px;
+}
 `;
 
 export const RegisterGrid = styled.div`
@@ -31,6 +40,7 @@ display: block;
 
 label {
 margin-bottom: 8px;
+
 }
 
 input {
@@ -48,6 +58,9 @@ padding: 8px;
 display: block;
 margin-top: 10px;
 }
+
+@media (max-width: 769px) {
+margin-left: 24px;
 
 `;
 

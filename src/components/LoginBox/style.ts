@@ -17,6 +17,22 @@ position: relative;
 top: 20px;
 left: 20px;
 }
+
+@media (max-width: 769px) {
+align-items: center;
+width: 100%;
+max-height: 100%;
+margin: 16px 0;
+
+h1 {
+text-align: center;
+margin: 0;
+}
+
+img {
+top: -165px;
+left: 20px;
+}
 `
 export const LeftBox = styled.div`
 flex: 1;
@@ -30,6 +46,9 @@ margin: 80px;
 margin-left: 48px;
 
 }
+@media (max-width: 769px) {
+align-items: center;
+margin: 0;
 `
 export const RightBox = styled.div`
 flex: 2;
@@ -37,6 +56,9 @@ background-image: url("/images/gym.jpeg");
 background-size: cover;
 background-position: center;
 height: 100%;
+
+@media (max-width: 769px) {
+display: none;
 `
 
 export const LoginInput = styled.input`
@@ -63,6 +85,10 @@ background-color: #333;
 &:focus::placeholder {
 opacity: 0;
 }
+
+@media (max-width: 769px) {
+text-align: center;
+margin: 10px 0;
 `
 export const Button = styled.button`
 padding: 12px 80px;
@@ -79,5 +105,11 @@ margin-left: 48px;
 
 &:hover {
 background-position: right;
+}
+
+@media (max-width: 769px) {
+margin-left: 0;
+margin-bottom: 16px;
+margin-top: 16px;
 
 `

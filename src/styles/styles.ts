@@ -4,6 +4,7 @@ export const ProfilePage = styled.div`
 margin: 0;
 display: flex;
 font-family: Roboto, sans-serif;
+height: 100%;
 `;
 
 export const ProfileBox = styled.div`
@@ -16,6 +17,10 @@ border-radius: 8px;
 margin-top: 16px;
 background: #151a2d;
 color: white;
+
+@media (max-width: 769px) {
+margin-top: 30px;
+max-height: 100%;
 `;
 
 export const InputGrid = styled.div`
@@ -41,9 +46,16 @@ border: 1px solid #ddd;
 }
 
 button {
-max-width: 10vh;
+max-width: 20vh;
 }
-`;
+
+@media (max-width: 769px) {
+display: block;
+
+input {
+margin-bottom: 12px;
+}
+`
 
 export const ActionButton = styled.div`
 margin-top: 20px;

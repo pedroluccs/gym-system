@@ -5,6 +5,8 @@ margin: 0;
 text-align: center;
 display: flex;
 font-family: Roboto, sans-serif;
+
+}
 `
 
 export const AnalyticsBox = styled.div`
@@ -18,7 +20,7 @@ display: block;
 
 h2 {
 padding: 10px 50px;
-background:#151a4d;
+background: #151a4d;
 text-align: left;
 }
 header {
@@ -26,11 +28,25 @@ width: 100%;
 height: 5%;
 margin-bottom: 40px;
 }
+
+@media (max-width: 769px) {
+height: 100%;
+
+
+h2 {
+margin-left: 10px;
+background: none;
+}
+}
 `
 export const Graphic = styled.div`
 display: flex;
 justify-content: space-between;
 margin: 50px;
+
+@media (max-width: 769px) {
+display: block;
+}
 `
 
 export const Status = styled.div`
@@ -51,5 +67,10 @@ h3 {
 p {
     font-size: 16px;
     margin: 0;
+}
+
+@media (max-width: 769px) {
+padding: 10px;
+margin-bottom: 16px;
 }
 `

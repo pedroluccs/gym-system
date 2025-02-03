@@ -7,6 +7,9 @@ width: 100%;
 gap: 20px;
 margin: 20px;
 color: #fff;
+
+@media (max-width: 769px) {
+margin: 0 auto;
 `;
 
 export const ProfileInfo = styled.div`
@@ -20,6 +23,10 @@ h2 {
 margin-bottom: 8px;
 margin-left: -1px;
 }
+
+@media (max-width: 769px) {
+margin: 0 auto;
+
 `
 
 export const PhotoWrapper = styled.div`
@@ -52,6 +59,9 @@ background: #6dbd81;
 input[type="file"] {
 display: none;
 }
+
+@media (max-width: 769px) {
+margin: 10px -16px;
 `
 
 export const InfoField = styled.div`
@@ -70,6 +80,7 @@ border: 1px solid #ddd;
 border-radius: 4px;
 width: 100%;
 }
+
 `
 
 export const EditableField = styled.div`
@@ -77,6 +88,9 @@ display: grid;
 grid-template-columns: 1fr 1fr;
 gap: 20px;
 width: 90%;
+
+@media (max-width: 769px) {
+margin: 0 auto;
 `
 
 export const EditButton = styled.button`
@@ -88,9 +102,14 @@ border: none;
 border-radius: 8px;
 cursor: pointer;
 
+
 &:hover {
     background: #6dbd81;
-}
+    }
+
+
+@media (max-width: 769px) {
+margin: 10px 20px;;
 `
 
 export const ActionButtonsContainer = styled.div`

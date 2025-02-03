@@ -30,6 +30,9 @@ background:#151a4d;
 text-align: center;
 }
 
+@media (max-width: 769px) {
+margin: 10px 0;
+width: 100%;
 `;
 
 export const CostsContainer = styled.div`
@@ -50,7 +53,11 @@ h3 {
 margin-top: 16px;
 }
 
-
+@media (max-width: 769px) {
+display: block;
+margin: 24px 0;
+height: 70vh;
+width: 100%;
 `;
 
 export const CostsTable = styled.table`
@@ -70,6 +77,10 @@ th {
 background-color: #f4f4f4;
 
 }
+
+@media (max-width: 769px) {
+display: block;
+text-align: center;
 `
 
 export const FormContainer = styled.div`
@@ -81,7 +92,6 @@ div {
 display: flex;
 flex-direction: column;
 margin-top: 20px;
-
 }
 
 input {
@@ -107,4 +117,7 @@ border-radius: 4px;
 background-color: #6dbd81;
 }
 }
+
+@media (max-width: 769px) {
+text-align: center;
 `;

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Sidebar = styled.aside`
+export const Sidebar = styled.aside<{open: boolean}>`
 position: sticky;
 top: 0;
 width: 270px;
@@ -12,6 +12,17 @@ margin: 16px;
 border-radius: 16px;
 height: calc(100vh - 32px);
 font-family: Roboto, sans-serif;
+
+@media (max-width: 768px) {
+    position: fixed;
+    left: 0;
+    top: 0;
+    margin: 0;
+    height: 550px;
+    width: 250px;
+    transform: translateX(${({ open }) => (open ? "0px" : "-300px")});
+    transition: transform 0.3s ease;
+}
 `
 
 export const SidebarHeader = styled.header`
@@ -42,7 +53,6 @@ margin-right: 20px;
 
 .nav-link {
 display: flex;
-gap: 12x;
 align-items: center;
 padding: 12px 15px;
 transition: 0.4s ease;
@@ -53,4 +63,29 @@ color: #151a2d;
 background: #fff;
 }
 }
+`
+export const HamburgerMenu = styled.button`
+position: fixed;
+top: 20px;
+left: 12px;
+background: transparent;
+color: white;
+font-size: 28px;
+border: none;
+cursor: pointer;
+z-index: 1100;
+
+@media (min-width: 769px) {
+    display: none;
+}
+`
+
+export const Overlay = styled.div`
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.5);
+z-index: 900;
 `

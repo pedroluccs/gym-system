@@ -1,4 +1,4 @@
-import { Sidebar, SidebarHeader, SideBarNav } from "./style";
+import { HamburgerMenu, Overlay, Sidebar, SidebarHeader, SideBarNav } from "./style";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -10,14 +10,24 @@ isAdmin?: boolean;
 
 const DashboardSidebar = () => {
 const [usuario, setUsuario] = useState<UsuarioLogado | null>(null);
+const [sidebarOpen, setSidebarOpen] = useState(false);
 
 useEffect(() => {
     const usuarioLogado = JSON.parse(localStorage.getItem("usuarioLogado") || "null");
     setUsuario(usuarioLogado);
 }, []);
 
+const toggleSidebar = () => setSidebarOpen(!sidebarOpen);
+
 return (
-    <Sidebar>
+    <>
+    <HamburgerMenu onClick={toggleSidebar}>
+        ☰
+    </HamburgerMenu>
+
+    {sidebarOpen && <Overlay onClick={toggleSidebar} />}
+
+    <Sidebar open={sidebarOpen}>
     <SidebarHeader>
         <span className="nav-icon material-symbols-outlined">person</span>
         <p>Olá, {usuario?.nome || "Usuário"}</p>
@@ -84,6 +94,7 @@ return (
         </SideBarNav>
     </nav>
     </Sidebar>
+        </>
 );
 };
 

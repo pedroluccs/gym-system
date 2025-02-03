@@ -25,6 +25,16 @@ h2 {
 color: #fff;
 margin: 16px;
 }
+
+@media (max-width: 769px) {
+display: block;
+margin: 10px 0;
+height: 100%;
+
+h2 {
+text-align: right;
+}
+}
 `
 
 export const SearchBar = styled.input`
@@ -32,6 +42,9 @@ padding: 10px;
 width: 100%;
 max-width: 600px;
 margin-bottom: 20px;
+
+@media (max-width: 769px) {
+margin-left: 80px;
 `
 
 export const Table = styled.table`
@@ -54,6 +67,9 @@ background-color: #f4f4f4;
 button {
 margin: 5px;
 }
+
+@media (max-width: 769px) {
+margin-left: 54px;
 `
 
 export const ButtonContainer = styled.div`
@@ -72,6 +88,10 @@ border: none;
 background-color: #6dbd81;
 }
 }
+
+@media (max-width: 769px) {
+margin-left: 80px;
+margin-bottom: 16px;
 `
 
 export const Modal = styled.div`
@@ -84,6 +104,9 @@ background-color: rgba(0, 0, 0, 0.6);
 display: flex;
 align-items: center;
 justify-content: center;
+
+@media (max-width: 769px) {
+overflow-y: scroll;
 `
 
 export const ModalContent = styled.div`
